@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+  emsdk:
+    image: fabianonunes/emsdk:latest
+    build:
+      context: .
+      args:
+        http_proxy: ${HTTP_PROXY}
+        https_proxy: ${HTTP_PROXY}
