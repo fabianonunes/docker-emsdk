@@ -1,6 +1,6 @@
 FROM openjdk:11-jdk-slim-sid
 
-ARG EMSDK_VERSION=1.39.2
+ARG EMSDK_VERSION=1.39.3
 
 RUN set -ex;                                                \
   # build libs
