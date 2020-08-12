@@ -1,6 +1,6 @@
-FROM openjdk:11-jdk-slim-sid
+FROM adoptopenjdk:11-jdk-hotspot-bionic
 
-ARG EMSDK_VERSION=1.40.1
+ARG EMSDK_VERSION=2.0.0
 
 RUN set -ex;                                                \
   # build libs
@@ -10,7 +10,7 @@ RUN set -ex;                                                \
     ca-certificates                                         \
     cmake                                                   \
     git-core                                                \
-    python                                                  \
+    python3                                                 \
     wget                                                    \
     xz-utils                                                \
   ;                                                         \
