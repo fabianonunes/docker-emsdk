@@ -1,6 +1,6 @@
 FROM adoptopenjdk:11-jdk-hotspot-bionic
 
-ARG EMSDK_VERSION=2.0.0
+ARG EMSDK_VERSION=2.0.1
 
 RUN set -ex;                                                \
   # build libs
